@@ -4,9 +4,12 @@ import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 
 export default function App() {
+    const checkHandler = () => console.log('Clicked!');
+
     return (
         <View style={styles.container}>
-            <Button title={'click me!'} onPress={() => console.log('Clicked!')} />            <StatusBar style="auto" />
+            <Button title={'click me!'} onPress={() => console.log(clickHandler)} />
+            <StatusBar style="auto" />
         </View>
     );
 }
