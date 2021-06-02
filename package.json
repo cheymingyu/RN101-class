@@ -31,5 +31,18 @@
   "jest": {
     "preset": "react-native"
   },
-  "private": true
+  "private": true,
+  "name": "rn101-class",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmg5691/RN101-class.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmg5691/RN101-class/issues"
+  },
+  "homepage": "https://github.com/cmg5691/RN101-class#readme",
+  "description": ""
 }
