@@ -5,11 +5,6 @@ const API_KEY = '{YOUR_API_KEY}';
 const queryUrl = (city) => `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
 
 export default class WeatherDetailScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Weather Information',
-  };
-
-
   constructor(props) {
     super(props);
 
@@ -37,6 +32,15 @@ export default class WeatherDetailScreen extends React.Component {
   }
 
   render() {
+    const{
+        route: {
+            params: { city },
+        }
+        navigation,
+    }   = this.props;
+
+    navigation.setOptions({ title: 'Weather Information: ${city}' });
+
     if (this.state.isLoading) {
       return (
         <View style={styles.container}>
